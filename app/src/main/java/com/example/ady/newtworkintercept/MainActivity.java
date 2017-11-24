@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ady.newtworkintercept.Model.RandomResponse;
 
@@ -77,17 +79,34 @@ public class MainActivity extends AppCompatActivity {
 
     public void DisplayOnerandomUser(View view) {
         Intent intent = new Intent(this,Main2Activity.class);
+
         startActivity(intent);
     }
 
     public void DisplayManyusers(View view) {
         Intent intent = new Intent(this,Main3Activity.class);
+        Button bntclicked = (Button) view;
+        String clicked = bntclicked.getText().toString();
+
+        intent.putExtra("magic",clicked);
         startActivity(intent);
     }
 
     public void DisplayManyFemaleusers(View view) {
+        Intent intent = new Intent(this,Main3Activity.class);
+        Button bntclicked = (Button) view;
+        String clicked = bntclicked.getText().toString();
+
+        intent.putExtra("magic",clicked);
+        startActivity(intent);
     }
 
     public void DisplayManyMaleusers(View view) {
+        Intent intent = new Intent(this,Main3Activity.class);
+        Button bntclicked = (Button) view;
+        String clicked = bntclicked.getText().toString();
+
+        intent.putExtra("magic",clicked);
+        startActivity(intent);
     }
 }

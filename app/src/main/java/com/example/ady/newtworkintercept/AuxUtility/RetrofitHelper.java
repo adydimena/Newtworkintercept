@@ -16,6 +16,10 @@ public class RetrofitHelper {
 
     public static final String BASE_URL = "https://randomuser.me/";
 
+
+
+
+
     //    build the retrofit object to be used
     public static Retrofit create() {
 
@@ -37,7 +41,7 @@ public class RetrofitHelper {
 
 
     //    create an interface for http verbs
-    interface RetrofitService {
+    interface RetrofitService  {
 
         @GET("api/?results=10")
         Call<RandomResponse> getRandomresponse();
